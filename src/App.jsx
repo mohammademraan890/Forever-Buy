@@ -8,6 +8,7 @@ import Contact from "./pages/Contact"
 import Product from "./pages/Product"
 import Collection from "./pages/Collection"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 const App = () => {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/product/:productId" element={<Product />} />
         <Route path="/collection" element={<Collection />} />
       </Routes>
+      <Footer/>
     </div>
   )
 }
